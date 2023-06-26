@@ -17,13 +17,15 @@ public class ModItems {
     public static final Item RAW_CITRINE = registerItem("raw_citrine",
             new Item(new FabricItemSettings()),
             ModItemGroup.CITRINE, ItemGroups.INGREDIENTS);
+
     public static Item registerItem(String name, Item item, ItemGroup... itemGroups) {
         Item registeredItem = Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
-        for (ItemGroup itemGroup: itemGroups) {
+        for (ItemGroup itemGroup : itemGroups) {
             ItemGroupEvents.modifyEntriesEvent(itemGroup).register(entries -> entries.add(registeredItem));
         }
         return registeredItem;
     }
+
     public static void registerModItems() {
         TutorialMod.LOGGER.debug("Registering mod items for" + TutorialMod.MOD_ID);
     }

@@ -12,6 +12,7 @@ public class ModItemGroup {
             .displayName(Text.translatable("itemgroup.tutorial-mod.citrine"))
             .icon(() -> new ItemStack(ModItems.CITRINE))
             .build();
+
     public static void registerModItemGroup() {
         TutorialMod.LOGGER.debug("Registering mod item group for " + TutorialMod.MOD_ID);
     }
