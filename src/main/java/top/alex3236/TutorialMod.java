@@ -3,6 +3,7 @@ package top.alex3236;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.alex3236.registry.ModBlocks;
 import top.alex3236.registry.ModItemGroup;
 import top.alex3236.registry.ModItems;
 
@@ -22,5 +23,6 @@ public class TutorialMod implements ModInitializer {
         LOGGER.info("Hello world!");
         ModItemGroup.registerModItemGroup();
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
     }
 }

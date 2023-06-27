@@ -1,5 +1,8 @@
 {
   "item.tutorial-mod.citrine": "黄晶",
   "item.tutorial-mod.raw_citrine": "粗黄晶",
+  "block.tutorial-mod.citrine_block": "黄晶块",
+  "block.tutorial-mod.citrine_ore": "黄晶矿石",
+  "block.tutorial-mod.deepslate_citrine_ore": "深层黄晶矿石",
   "itemgroup.tutorial-mod.citrine": "黄晶"
 }
